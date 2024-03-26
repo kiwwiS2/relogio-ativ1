@@ -1,16 +1,15 @@
-const botoes = docujment.querySelectorAll(".botao");
-const textos = docujment.querySelectorAll(".abas-conteudo");
+const botoes = document.querySelectorAll(".botao");
+const textos = document.querySelectorAll(".abas-conteudo");
 
 
- for(let i=0;i<botoes.length;i++){ 
-   botoes(i).onclik = function (){
+ for(let i = 0 ; i < botoes.length; i++){ 
+   botoes[i].onclick = function (){
  
-    for (let j=0;botoes.length;j++) {
+    for (let j = 0; j < botoes.length; j++) {
         botoes[j].classList.remove("ativo");
         textos[j].classList.remove("ativo");
     }
-   botoes[1].classList.add("ativo");
-   textos[1].classList.add("ativo");
+   botoes[i].classList.add("ativo");
+   textos[i].classList.add("ativo");
  }
 }
-
